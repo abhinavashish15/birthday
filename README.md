@@ -1,36 +1,115 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🎉 Birthday Surprise Website
 
-## Getting Started
+A beautiful, interactive birthday surprise website built with Next.js, TypeScript, Tailwind CSS, and Framer Motion.
 
-First, run the development server:
+## ✨ Features
 
+- **🏠 Home Page**: Animated landing page with floating hearts and navigation cards
+- **💌 Love Letter**: A heartfelt birthday letter with rose petal animations
+- **📸 Memory Lane**: Photo gallery section to showcase your favorite moments together
+- **🎂 Birthday Cake**: Interactive cake with clickable candles and confetti celebration
+- **🎁 Birthday Wishes**: 12 gift boxes with special wishes to unwrap
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ installed
+- npm or yarn package manager
+
+### Installation
+
+1. Navigate to the project directory:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+cd birthday-surprise
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+2. Install dependencies (already done):
+```bash
+npm install
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3. Run the development server:
+```bash
+npm run dev
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+4. Open your browser and visit:
+```
+http://localhost:3000
+```
 
-## Learn More
+## 🎨 Customization
 
-To learn more about Next.js, take a look at the following resources:
+### 1. Personalize the Love Letter
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Edit `app/letter/page.tsx` and modify the `letterContent` array to write your own heartfelt message.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 2. Add Your Photos
 
-## Deploy on Vercel
+To add real photos to the Memory Lane section:
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Place your photos in the `public` folder (e.g., `public/photo1.jpg`, `public/photo2.jpg`)
+2. Edit `app/memories/page.tsx`
+3. Replace the emoji placeholders with `<Image>` components:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```tsx
+import Image from 'next/image';
+
+// Replace the emoji div with:
+<Image 
+  src="/photo1.jpg" 
+  alt="Memory" 
+  width={300} 
+  height={300} 
+  className="rounded-2xl object-cover"
+/>
+```
+
+### 3. Customize Colors
+
+The website uses Tailwind CSS. You can change color schemes throughout the pages:
+- `from-pink-400` → `from-blue-400`
+- `to-purple-500` → `to-green-500`
+
+### 4. Add More Wishes
+
+Edit `app/wishes/page.tsx` and add more objects to the `wishes` array with your custom wishes.
+
+## 📱 Mobile Responsive
+
+The website is fully responsive and works beautifully on:
+- 📱 Mobile phones
+- 📱 Tablets
+- 💻 Desktops
+
+## 🎯 Deployment
+
+### Deploy to Vercel (Recommended)
+
+1. Push your code to GitHub
+2. Visit [vercel.com](https://vercel.com)
+3. Import your repository
+4. Deploy with one click!
+
+Your girlfriend can access the website from anywhere with the Vercel URL.
+
+## 🎁 Pro Tips
+
+- **Timing**: Share the link at midnight on her birthday for maximum surprise!
+- **Personal Touch**: Record yourself reading the letter and add an audio player
+- **Custom Domain**: Get a custom domain like `happybirthday[hername].com`
+- **Analytics**: Add analytics to see when she visits each page
+
+## 💖 Made With Love
+
+Built with:
+- ⚡ Next.js 15
+- 🎨 Tailwind CSS
+- 🎬 Framer Motion
+- 💙 TypeScript
+
+---
+
+**Happy Birthday to your special someone! 🎂🎉**
+
