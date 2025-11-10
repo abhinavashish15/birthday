@@ -18,7 +18,7 @@ export default function Home() {
     
     // Create and setup audio element
     // You can replace 'birthday-music.mp3' with your own music file in the public folder
-    const audio = new Audio('/birthday-music.mp3');
+    const audio = new Audio('/parda.mp3');
     audio.loop = true;
     audio.volume = 0.4;
     setAudioElement(audio);
@@ -410,6 +410,27 @@ export default function Home() {
                   }}
                 >
                   My Love!
+                </motion.span>
+                <br />
+                <motion.span
+                  animate={{
+                    backgroundPosition: ['0% 50%', '100% 50%', '0% 50%'],
+                  }}
+                  transition={{
+                    duration: 4,
+                    repeat: Infinity,
+                    ease: 'linear',
+                  }}
+                  style={{
+                    background: 'linear-gradient(90deg, #8b5cf6, #ec4899, #f472b6, #8b5cf6)',
+                    backgroundSize: '200% 200%',
+                    WebkitBackgroundClip: 'text',
+                    WebkitTextFillColor: 'transparent',
+                    backgroundClip: 'text',
+                    filter: 'drop-shadow(0 4px 10px rgba(139, 92, 246, 0.4))',
+                  }}
+                >
+                  My BuBu!
                 </motion.span>
               </motion.h2>
 

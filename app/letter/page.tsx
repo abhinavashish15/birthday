@@ -36,7 +36,7 @@ export default function LetterPage() {
     "",
     "Every day with you is a gift I treasure. Your smile lights up my world in ways I never knew possible. Your kindness, your warmth, your beautiful soul - they all make me fall in love with you over and over again.",
     "",
-    "Thank you for being you. Thank you for sharing your life with me, for every laugh we've shared, every adventure we've embarked on, and every quiet moment we've cherished together.",
+    "Thank you for being you. Thank you for sharing your life with me, for every laugh we've shared and every quiet moment we've cherished together.",
     "",
     "Today, on your birthday, I want to remind you that you are loved beyond measure. You deserve all the happiness in the world, and I promise to spend every day trying to give you just that.",
     "",
@@ -45,7 +45,7 @@ export default function LetterPage() {
     "Happy Birthday, my love. You make my world complete.",
     "",
     "Forever yours,",
-    "With all my love ❤️",
+    "With all my love ❤️ and I love you so much!",
   ];
 
   return (

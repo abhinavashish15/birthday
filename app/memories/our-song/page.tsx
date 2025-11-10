@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import ImageSlideshow from '../components/ImageSlideshow';
 
-const images: string[] = []; // Add your image filenames here
+const images: string[] = [];
 
 export default function OurSongPage() {
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
