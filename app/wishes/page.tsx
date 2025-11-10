@@ -261,10 +261,6 @@ export default function WishesPage() {
                 <div className={`absolute -inset-1 bg-gradient-to-br ${wish.color} rounded-3xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity`} />
 
                 <motion.div
-                  className="relative overflow-hidden rounded-3xl p-6 shadow-2xl cursor-pointer h-56 md:h-64 flex flex-col items-center justify-center"
-                  style={{
-                    background: `linear-gradient(135deg, var(--tw-gradient-stops))`,
-                  }}
                   className={`relative overflow-hidden bg-gradient-to-br ${wish.color} rounded-3xl p-6 shadow-2xl cursor-pointer h-56 md:h-64 flex flex-col items-center justify-center border-2 border-white/30`}
                   whileHover={{ 
                     scale: 1.05, 
