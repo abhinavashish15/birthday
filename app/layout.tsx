@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Dancing_Script, Great_Vibes, Tangerine } from "next/font/google";
 import "./globals.css";
+import { MusicProvider } from "./contexts/MusicContext";
+import MusicButton from "./components/MusicButton";
 
 const inter = Inter({ subsets: ["latin"], variable: '--font-inter' });
 const dancing = Dancing_Script({ subsets: ["latin"], variable: '--font-dancing' });
@@ -28,7 +30,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} ${dancing.variable} ${greatVibes.variable} ${aphrodite.variable} font-sans antialiased`}>
-        {children}
+        <MusicProvider>
+          <MusicButton />
+          {children}
+        </MusicProvider>
       </body>
     </html>
   );
