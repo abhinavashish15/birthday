@@ -18,7 +18,7 @@ export default function Home() {
     
     // Create and setup audio element
     // You can replace 'birthday-music.mp3' with your own music file in the public folder
-    const audio = new Audio('/parda.mp3');
+    const audio = new Audio('/sajna.mp3');
     audio.loop = true;
     audio.volume = 0.4;
     setAudioElement(audio);
